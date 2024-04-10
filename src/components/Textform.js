@@ -37,7 +37,7 @@ export default function Textform(props) {
   return (
     <>
         <div className="container mb-3 my-3">
-            <label htmlFor="exampleFormControlTextarea1" className="form-label" style={{color: props.mode==='dark'?'white':'black'}}>{props.title}</label>
+            {/* <label htmlFor="exampleFormControlTextarea1" className="form-label" style={{color: props.mode==='dark'?'white':'black'}}>{props.title}</label> */}
             <textarea className="form-control" value={text} onChange={handleOnChange} style={{color: props.mode==='dark'?'white':'black',backgroundColor: props.mode==='dark'?'grey':'white'}} id="exampleFormControlTextarea1" placeholder ='Enter your text here' rows="10"/>
             <button disabled = {text.length<=0?true:false} className={`btn btn-${props.theme==='primary' || props.theme ==='danger'?'secondary':'primary'} my-3 mx-2`} onClick= {handleLowClick} >Convert to Lower Case</button>
             <button disabled = {text.length<=0?true:false} className={`btn btn-${props.theme==='primary' || props.theme ==='danger'?'secondary':'primary'} my-3 mx-2`} onClick = {handleUpClick}>Convert to Upper Case</button>

@@ -80,8 +80,6 @@ function App() {
           <Route exact path="/" element={ <Textform title= "Enter your text to analyze below" theme={theme} mode={mode} showAlert={showAlert} toggleMode={toggleMode}/>} />
           
           <Route exact path="/about" element={ <About mode={mode}/>}/>
-          
-       
         </Routes>
         </Router>
     
